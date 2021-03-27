@@ -1,0 +1,23 @@
+{
+  "name": "time-equaliser",
+  "version": "1.0.0",
+  "description": "A simple time equaliser bot for global discord servers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-roller/Time-Equaliser.git"
+  },
+  "author": "JavaCode7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/code-roller/Time-Equaliser/issues"
+  },
+  "homepage": "https://github.com/code-roller/Time-Equaliser#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}
