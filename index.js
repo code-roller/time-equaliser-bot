@@ -22,7 +22,11 @@ bot.on("message", async message => {
     if (message.content == "^now") {
         message.channel.send(serverTime.toUTCString().split(" ").slice(0, 5).join(" "));
     } else if (command == "^set") {
-        offset = parseInt(args[0])
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            offset = parseInt(args[0])
+        } else {
+            message.reply(`Only admins can use this command.`)
+        }
     }
 });
 
