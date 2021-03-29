@@ -24,6 +24,7 @@ bot.on("message", async message => {
     } else if (command == "^set") {
         if (message.member.hasPermission('ADMINISTRATOR')) {
             offset = parseInt(args[0])
+            message.reply(`You have set the server time to GMT+${offset}mins.`)
         } else {
             message.reply(`Only admins can use this command.`)
         }
